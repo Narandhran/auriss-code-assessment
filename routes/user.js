@@ -5,7 +5,7 @@ module.exports = app => {
     /**
      * Admin only
      */
-    app.put('/user/update_profile/:id', AdminOnly, userCtl.editProfile);
+    app.put('/user/update_profile/:mobile', AdminOnly, userCtl.editProfile);
     /**
      * All users
      */

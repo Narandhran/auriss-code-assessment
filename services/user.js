@@ -46,7 +46,7 @@ module.exports = {
     editProfile: async (request, cb) => {
         await User
             .findOneAndUpdate(
-                { '_id': request.params.id },
+                { 'mobile': request.params.mobile },
                 { '$set': request.body },
                 {
                     'fields': { 'fname': 1, 'lname': 1, 'email': 1, 'phone': 1, 'gender': 1 },
